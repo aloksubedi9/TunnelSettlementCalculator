@@ -1,18 +1,19 @@
-Tunnel Settlement Calculator
-Python tool for calculating and visualizing TBM tunnel settlement using Attewell et al. (1986) method. Features a Tkinter GUI for input, dropdowns for geological/overburden conditions, Matplotlib plots, and Excel export. Includes a contour plotter for settlement visualization along the alignment. Supports single and twin tunnels with Gaussian settlement profiles.
-Features
-tunnel_calculator.py: Tkinter GUI for:
-Inputting TBM tunnel parameters (e.g., excavation diameter, depth).
+Tunnel Settlement Calculator 
+A Python tool for calculating and visualizing TBM tunnel settlement using the Attewell et al. (1986) method. Features a Tkinter GUI for input, dropdowns for geological/overburden conditions, Matplotlib plots, and Excel export. Includes a contour plotter for settlement visualization along the alignment. Supports single and twin tunnels with Gaussian settlement profiles.
+ Features
+tunnel_calculator.py:
+Tkinter GUI for inputting TBM tunnel parameters (e.g., excavation diameter, depth).
 
-Dropdowns for geological/overburden conditions, auto-updating VL and k values.
+Dropdown menus for geological and overburden conditions, auto-updating VL and k values.
 
-Visualizing settlement profiles with Matplotlib.
+Visualizes settlement profiles using Matplotlib.
 
-Exporting data to Excel (settlement_data.xlsx).
+Exports data to Excel (settlement_data.xlsx).
 
-contour_plotter.py: Generates contour plots of settlements along the tunnel alignment using Excel data.
+contour_plotter.py:
+Generates contour plots of settlements along the tunnel alignment using Excel data.
 
-Installation
+ Installation
 Clone the repository:
 bash
 
@@ -24,10 +25,10 @@ bash
 
 pip install -r requirements.txt
 
-Required packages: numpy, matplotlib, pandas, openpyxl.
+Required packages: numpy, matplotlib, pandas, openpyxl
 
-Usage
-Run the main script to calculate settlements:
+ Usage
+Calculate Settlements:
 bash
 
 python src/tunnel_calculator.py
@@ -38,7 +39,7 @@ Select geological/overburden conditions from dropdowns.
 
 Click "Calculate & Plot" to view results and generate settlement_data.xlsx.
 
-Visualize settlement contours:
+Visualize Settlement Contours:
 bash
 
 python src/contour_plotter.py
@@ -47,27 +48,32 @@ Ensure settlement_data.xlsx exists in the working directory.
 
 Adjust file_path in contour_plotter.py if needed.
 
-Detailed instructions are in docs/usage.md.
-Theoretical Background
-The tool uses the Attewell et al. (1986) method for TBM tunnel settlement, modeling the transverse settlement trough as a Gaussian curve. For twin tunnels, superposition is applied. See docs/theory.md for details.
-Repository Structure
-src/: Python scripts (tunnel_calculator.py, contour_plotter.py).
+For detailed instructions, see  docs/usage.md (docs/usage.md).
+ Theoretical Background
+The tool uses the Attewell et al. (1986) method for TBM tunnel settlement, modeling the transverse settlement trough as a Gaussian curve. For twin tunnels, superposition is applied. Learn more in  docs/theory.md (docs/theory.md).
+ Repository Structure
+src/: Python scripts
+tunnel_calculator.py
 
-docs/: Documentation, including theory, usage, and screenshots.
+contour_plotter.py
 
-output/: Sample settlement_data.xlsx (optional).
+docs/: Documentation
+Theory, usage instructions, and screenshots
 
-requirements.txt: Python dependencies.
+output/: Sample output
+settlement_data.xlsx (optional)
 
-LICENSE: MIT License.
+requirements.txt: Python dependencies
 
-Screenshots
+LICENSE: MIT License
+
+ Screenshots
 GUI: docs/screenshots/gui_example.png
 
 Contour Plot: docs/screenshots/contour_plot.png
 
-License
-MIT License (see LICENSE).
-Contributing
+ License
+This project is licensed under the MIT License - see the LICENSE file for details.
+ Contributing
 Contributions are welcome! Please open an issue or submit a pull request for improvements or bug fixes.
 
