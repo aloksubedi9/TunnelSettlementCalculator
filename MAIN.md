@@ -1,4 +1,5 @@
 #Tunnel Settlement Calculator
+
 Python tool for calculating and visualizing TBM tunnel settlement using Attewell et al. (1986) method. Features a Tkinter GUI for input, dropdowns for geological/overburden conditions, Matplotlib plots, and Excel export. Includes a contour plotter for settlement visualization along the alignment. Supports single and twin tunnels with Gaussian settlement profiles.
 #Features
 tunnel_calculator.py: Tkinter GUI for  
