@@ -1,17 +1,16 @@
 # TunnelSettlementCalculator
 # Tunnel Settlement Calculator
 
-A Python-based tool for calculating and visualizing ground settlement due to tunneling, developed for the Mumbai Underground Road Tunnel Connectivity project. Implements the Attewell et al. (1986) and Rankin (1988) method for vertical settlement assessment.
+Python tool for calculating and visualizing TBM tunnel settlement using Attewell et al. (1986) method. Features a Tkinter GUI for input, dropdowns for geological/overburden conditions, Matplotlib plots, and Excel export. Includes a contour plotter for settlement visualization along the alignment. Supports single and twin tunnels with Gaussian settlement profiles.
+Features
+tunnel_calculator.py: Tkinter GUI for:
+Inputting TBM tunnel parameters (e.g., excavation diameter, depth).
 
-## Features
-- Tkinter GUI (`tunnel_calculator.py`) for inputting tunnel parameters.
-- Dropdown menus for geological and overburden conditions, auto-updating VL and k values.
-- Settlement visualization with Matplotlib.
-- Export to Excel (`settlement_data.xlsx`) for further analysis.
-- Contour plotting script (`contour_plotter.py`) to visualize settlement contours along the alignment.
+Dropdowns for geological/overburden conditions, auto-updating VL and k values.
 
-## Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/TunnelSettlementCalculator.git
-   cd TunnelSettlementCalculator
+Visualizing settlement profiles with Matplotlib.
+
+Exporting data to Excel (settlement_data.xlsx).
+
+contour_plotter.py: Generates contour plots of settlements along the tunnel alignment using Excel data.
+
