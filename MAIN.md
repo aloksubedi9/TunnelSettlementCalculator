@@ -55,7 +55,7 @@ Detailed instructions are in **`docs/usage.md`**.
 ## Theoretical Background  
 
 The tool uses the **Attewell et al. (1986)** method for TBM tunnel settlement, modeling the transverse settlement trough as a **Gaussian curve**.  
-For twin tunnels, **superposition** is applied. Learn more in **`docs/theory.md`**.  
+For twin tunnels, **superposition** is applied. Learn more in **`theory.md`**.  
 
 ## Repository Structure  
 
