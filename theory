@@ -1,0 +1,36 @@
+# Theoretical Background
+
+## Vertical Settlement for TBM Tunnels
+
+This tool calculates vertical settlement induced by TBM (Tunnel Boring Machine) tunneling, using a method proposed by Attewell et al. (1986) and Rankin (1988), similar to the approach by O’Reilly and New (1982). The settlement profile at the ground surface in the transverse direction is modeled as a Gaussian curve, specifically tailored for TBM tunneling applications.
+
+### Settlement Equations
+
+Settlement of a point at a distance \( y \) from the TBM tunnel axis is expressed as:
+
+\[
+S_v = S_{max} \exp\left(-\frac{y^2}{2i^2}\right)
+\]
+
+\[
+\frac{V_s}{\sqrt{2\pi} \cdot i} = \exp\left(-\frac{y^2}{2i^2}\right)
+\]
+
+\[
+\frac{V_L \cdot A}{\sqrt{2\pi} \cdot i} = \exp\left(-\frac{y^2}{2i^2}\right)
+\]
+
+Where:
+- \( S_{max} \): Maximum settlement above the TBM tunnel axis.
+- \( V_s \): Volume of the settlement trough per meter of tunnel advance, defined as a percentage \( V_L \) of the theoretical tunnel section \( A = \frac{D_{excav}^2}{4} \).
+- \( i \): Trough width parameter, \( i = k \cdot z_0 \), where \( k \) is a dimensionless constant (dependent on soil type) and \( z_0 \) is the depth of the TBM tunnel axis below the surface.
+
+For parallel twin TBM tunnels, the vertical displacement is calculated using superposition:
+
+\[
+S = S_{max} \left[ \exp\left(-\frac{y^2}{2i^2}\right) + \exp\left(-\frac{(y-L)^2}{2i^2}\right) \right]
+\]
+
+Where:
+- \( L \): Distance between the axes of the two TBM tunnels.
+- Volume loss parameters (\( V_L \), \( k \)) are determined based on geological and overburden conditions, as defined in the provided table.
