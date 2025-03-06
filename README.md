@@ -6,11 +6,11 @@ Features
 tunnel_calculator.py: Tkinter GUI for:
 Inputting TBM tunnel parameters (e.g., excavation diameter, depth).
 
-Dropdowns for geological/overburden conditions, auto-updating VL and k values.
-
-Visualizing settlement profiles with Matplotlib.
-
-Exporting data to Excel (settlement_data.xlsx).
-
-contour_plotter.py: Generates contour plots of settlements along the tunnel alignment using Excel data.
+  1) Dropdowns for geological/overburden conditions, auto-updating VL and k values.
+  
+  2)  Visualizing settlement profiles with Matplotlib.
+  
+  3) Exporting data to Excel (settlement_data.xlsx).
+  
+  4) contour_plotter.py: Generates contour plots of settlements along the tunnel alignment using Excel data.
 
